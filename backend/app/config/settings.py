@@ -68,7 +68,15 @@ class Settings(BaseSettings):
     CNG_PRICE: float = 89.0          # per kg
     ELECTRICITY_PRICE: float = 18.0  # per kWh at public DC chargers
 
-    CORS_ORIGINS: List[str] = ["http://localhost:8080", "http://localhost:3000", "http://localhost:5173"]
+    
+CORS_ORIGINS: List[str] = [
+    "http://localhost:8080",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://optinav1.vercel.app",
+    "https://optinav1-git-master-technova-217d.vercel.app",
+]
+
 
     @property
     def overpass_urls(self) -> List[str]:
